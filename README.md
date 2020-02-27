@@ -8,13 +8,8 @@ Introduction
 
 ---
 
-In this work, we consider computing natural joins over massive streams of JSON documents that do not adhere to a specific schema. 
-We first propose an efficient and scalable partitioning algorithm that uses the main principles of association analysis to identify patterns of co-occurrence
-of the attribute-value pairs within the documents. Data is then accordingly forwarded to compute nodes and locally joined using a novel FP-tree--based join algorithm. 
-By compactly storing the documents and efficiently traversing the FP-tree structure, the proposed join algorithm can operate on large input sizes and provide results in real-time. 
-We discuss data-dependent scalability limitations that are inherent to natural joins over schema-free data and show how to practically circumvent them by artificially expanding the 
-space of possible attribute-value pairs. The proposed algorithms are realized in the Apache Storm stream processing framework. Through extensive experiments with real-world as well as 
-synthetic data, we evaluate the proposed algorithms and show that they outperform competing approaches.
+Computing natural joins over a stream of schema-free JSON documents. Realized in a streaming environment where the data is distributed across the machines using
+a partitioning algorithm based on association groups. For performing the natural join an FP-tree-based join algorithm is used. 
 
 Dataset
 ------
