@@ -44,7 +44,7 @@ responsible for parsing the documents should be modified.
 If there is a need for expanding attributes, the `performJoinOfKVPairs` variable should be set to true. The expansion of attributes is required when there is an attribute whose number of unique values
 is smaller than the required number of partitions. 
 
-To store the computed join results in CSV files first the path to output folder needs to be set in the *JoinResultsCsvOutput* class by modifying the `pathToFolder` variable. Secondly, the required lines 
+To store the computed join results in CSV files first the path to the output folder needs to be set in the *JoinResultsCsvOutput* class by modifying the `pathToFolder` variable. Secondly, the required lines 
 that perform the creation of the files need to be uncommented in the *FPTreeJoinerBolt* class.
 
 #### Local mode 
