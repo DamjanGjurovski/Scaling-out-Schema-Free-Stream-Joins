@@ -51,7 +51,7 @@ that perform the creation of the files need to be uncommented in the *FPTreeJoin
 
 Using the command: `mvn compile exec:java -Dstorm.topology=ssfsj.AssociationGroupsTopology`
 
-### Cluster
+#### Cluster
 The needed JAR can be created using the command: `mvn assembly:assembly`. Once the JAR is transfered to the cluster, 
 
 the command `path-to-storm/storm jar ScalingOutSchemaFreeStreamJoins-1.0-SNAPSHOT-jar-with-dependencies.jar ssfsj.AssociationGroupsTopology association-groups-topology`,
