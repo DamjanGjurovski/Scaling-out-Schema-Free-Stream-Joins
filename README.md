@@ -69,7 +69,6 @@ If you compare with this code or use it in your research, please cite:
         title     = {Scaling Out Schema-free Stream Joins},    
         booktitle = {36th {IEEE} International Conference on Data Engineering, {ICDE} 2020,    
                     Dallas, Texas, April 20-24, 2020},    
-        pages     = {1--12},    	
         year      = {2020}    
     }
 ```     
@@ -78,6 +77,6 @@ References
 ------
 
 ---
-[1] - Damjan Gjurovski and Sebastian Michel. Scaling Out Schema-free Stream Joins. ICDE, 2020. [pdf (copyright IEEE)](https://dbis.informatik.uni-kl.de/files/papers/scaling_out_schema_free_stream_joins.pdf)
+[1] - Damjan Gjurovski and Sebastian Michel. "Scaling Out Schema-free Stream Joins," ICDE 2020, 2020. [pdf (copyright IEEE)](https://dbis.informatik.uni-kl.de/files/papers/scaling_out_schema_free_stream_joins.pdf)
 
 [2] - C. Chasseur, Y. Li, and J. M. Patel, “Enabling JSON document stores in relational systems,” WebDB 2013, pp. 1–6, 2013.
