@@ -25,7 +25,7 @@ If you compare with this code or use it in your research, please cite:
     }
 ```   
 
-A link to the pdf is available on the personal websites of the authors ([1](https://dbis.informatik.uni-kl.de/index.php/en/people/damjan-gjurovski), [2](https://dbis.informatik.uni-kl.de/index.php/en/people/michel)). 
+A link to the pdf is available on the author's [website](https://dbis.informatik.uni-kl.de/index.php/en/people/damjan-gjurovski). 
 
 Dataset
 ------
