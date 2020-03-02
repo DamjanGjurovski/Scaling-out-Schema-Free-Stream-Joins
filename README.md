@@ -12,6 +12,18 @@ This work focuses on computing natural joins over a stream of schema-free JSON d
 analysis to identify patterns of co-occurrence of the attribute-value pairs within the documents. Based on the computed partitions, the data is forwarded to the responsible compute nodes. 
 Every compute node, computes the joinable documents by using a join algorithm based on FP-trees. Additionally, we provide a practical solution for cases of low attribute-value variety. [1]
 
+If you compare with this code or use it in your research, please cite:   
+
+
+```
+    @inproceedings{scaling-out-schema-free-stream-joins,    
+        author    = {Damjan Gjurovski and Sebastian Michel},    
+        title     = {Scaling Out Schema-free Stream Joins},    
+        booktitle = {36th {IEEE} International Conference on Data Engineering, {ICDE} 2020,    
+                    Dallas, Texas, April 20-24, 2020},    
+        year      = {2020}    
+    }
+```   
 
 Dataset
 ------
@@ -54,24 +66,7 @@ The needed JAR can be created using the command: `mvn assembly:assembly`. Once t
 the command `path-to-storm/storm jar ScalingOutSchemaFreeStreamJoins-1.0-SNAPSHOT-jar-with-dependencies.jar ssfsj.AssociationGroupsTopology association-groups-topology`,
 
 can be used for starting the application on the Storm cluster.
-
-Citing Scaling Out Schema-free Stream Joins
-------
-
----
-
-If you compare with this code or use it in your research, please cite:   
-
-
-```
-    @inproceedings{scaling-out-schema-free-stream-joins,    
-        author    = {Damjan Gjurovski and Sebastian Michel},    
-        title     = {Scaling Out Schema-free Stream Joins},    
-        booktitle = {36th {IEEE} International Conference on Data Engineering, {ICDE} 2020,    
-                    Dallas, Texas, April 20-24, 2020},    
-        year      = {2020}    
-    }
-```     
+  
 
 References
 ------
