@@ -61,9 +61,6 @@ Citing Scaling Out Schema-free Stream Joins
 ---
 
 If you compare with this code or use it in your research, please cite:   
-``` 
-
-``` 
 
 
 ```
