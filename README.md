@@ -8,14 +8,16 @@ Introduction
 
 ---
 
-Computing natural joins over a stream of schema-free JSON documents. Realized in a streaming environment where the data is distributed across the machines using
-a partitioning algorithm based on association groups. For performing the natural join an FP-tree-based join algorithm is used. 
+This work focuses on computing natural joins over a stream of schema-free JSON documents. Initially, the data is partitioned through a partitioning algorithm that uses the main principles of association
+analysis to identify patterns of co-occurrence of the attribute-value pairs within the documents. Based on the computed partitions, the data is forwarded to the responsible compute nodes. 
+Every compute node, computes the joinable documents by using a join algorithm based on FP-trees. Additionally, we provide a practical solution for cases of low attribute-value variety. [1]
+
 
 Dataset
 ------
 
 ---
-As a dataset, we use NoBench [1]. In this repository, there is a sample of 10,000,000 JSON objects (which we treat as documents) generated with the NoBench generator that can be used for testing the streaming application. 
+As a dataset, we use NoBench [2]. In this repository, there is a sample of 10,000,000 JSON objects (which we treat as documents) generated with the NoBench generator that can be used for testing the streaming application. 
 The documents are located in the folder `data/`. 
 There are 100 documents where every document contains 100,000 JSON objects. 
 
@@ -51,10 +53,34 @@ The needed JAR can be created using the command: `mvn assembly:assembly`. Once t
 
 the command `path-to-storm/storm jar ScalingOutSchemaFreeStreamJoins-1.0-SNAPSHOT-jar-with-dependencies.jar ssfsj.AssociationGroupsTopology association-groups-topology`,
 
-can be used for starting the application on the Storm cluster. 
+can be used for starting the application on the Storm cluster.
+
+Citing Scaling Out Schema-free Stream Joins
+------
+
+---
+
+If you compare with this code or use it in your research, please cite:   
+``` 
+
+``` 
+
+
+```
+    @inproceedings{scaling-out-schema-free-stream-joins,    
+        author    = {Damjan Gjurovski and Sebastian Michel},    
+        title     = {Scaling Out Schema-free Stream Joins},    
+        booktitle = {36th {IEEE} International Conference on Data Engineering, {ICDE} 2020,    
+                    Dallas, Texas, April 20-24, 2020},    
+        pages     = {1--12},    	
+        year      = {2020}    
+    }
+```     
 
 References
 ------
 
 ---
-[1] - C. Chasseur, Y. Li, and J. M. Patel, “Enabling JSON document stores in relational systems,” WebDB 2013, pp. 1–6, 2013.
+[1] - Damjan Gjurovski and Sebastian Michel. Scaling Out Schema-free Stream Joins. ICDE, 2020. [pdf (copyright IEEE)](https://dbis.informatik.uni-kl.de/files/papers/scaling_out_schema_free_stream_joins.pdf)
+
+[2] - C. Chasseur, Y. Li, and J. M. Patel, “Enabling JSON document stores in relational systems,” WebDB 2013, pp. 1–6, 2013.
