@@ -25,6 +25,8 @@ If you compare with this code or use it in your research, please cite:
     }
 ```   
 
+A link to the pdf is available on the personal websites of the authors ([1](https://dbis.informatik.uni-kl.de/index.php/en/people/damjan-gjurovski), [2](https://dbis.informatik.uni-kl.de/index.php/en/people/michel)). 
+
 Dataset
 ------
 
@@ -72,6 +74,6 @@ References
 ------
 
 ---
-[1] - Damjan Gjurovski and Sebastian Michel. "Scaling Out Schema-free Stream Joins," ICDE 2020, 2020. [pdf (copyright IEEE)](https://dbis.informatik.uni-kl.de/files/papers/scaling_out_schema_free_stream_joins.pdf)
+[1] - Damjan Gjurovski and Sebastian Michel. "Scaling Out Schema-free Stream Joins," ICDE 2020, 2020. 
 
 [2] - C. Chasseur, Y. Li, and J. M. Patel, “Enabling JSON document stores in relational systems,” WebDB 2013, pp. 1–6, 2013.
